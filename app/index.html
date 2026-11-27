@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday Finder — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="54 real Black Friday and Cyber Monday deals, each checked at its store on 27 Nov 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="kicker">BLACK FRIDAY &middot; 27 NOV 2026 &middot; CYBER MONDAY 30 NOV</p>
+  <h1>Friday Finder</h1>
+  <p class="tagline">Real deals, checked at the store today — and an honest verdict on each one.</p>
+  <p class="checked-line" id="checkedLine">Prices checked Fri 27 Nov 2026, 06:30 UTC (13:30 WIB). Prices move all day — confirm at checkout.</p>
+</header>
+
+<section class="stats" id="statsBar" aria-label="Deal summary">
+  <div class="stat"><span class="stat-num" id="statTotal">54</span><span class="stat-label">deals checked</span></div>
+  <div class="stat"><span class="stat-num" id="statReal">0</span><span class="stat-label">real deals</span></div>
+  <div class="stat"><span class="stat-num" id="statBest">0%</span><span class="stat-label">biggest cut</span></div>
+  <div class="stat"><span class="stat-num" id="statSaved">$0</span><span class="stat-label">total savings</span></div>
+  <div class="stat"><span class="stat-num">7</span><span class="stat-label">stores</span></div>
+</section>
+
+<section class="how">
+  <h2>How to read a verdict</h2>
+  <ul class="verdict-key">
+    <li><span class="badge badge-real">REAL DEAL</span> 40%+ off, or a named all-time low.</li>
+    <li><span class="badge badge-strong">STRONG</span> 25–39% off a current model.</li>
+    <li><span class="badge badge-decent">DECENT</span> 15–24% off, no low-price claim.</li>
+    <li><span class="badge badge-routine">ROUTINE</span> Under 15% — mostly the bundle, not a cut.</li>
+    <li><span class="badge badge-check-list">CHECK THE LIST</span> The list price was raised before the sale.</li>
+  </ul>
+</section>
+
+<section class="controls" aria-label="Search and filters">
+  <input id="searchBox" type="search" placeholder="Search a product, brand or store…" aria-label="Search deals">
+  <select id="categoryFilter" aria-label="Filter by category"></select>
+  <select id="storeFilter" aria-label="Filter by store"></select>
+  <select id="discountFilter" aria-label="Filter by discount">
+    <option value="0">Any discount</option>
+    <option value="15">15% off or more</option>
+    <option value="25">25% off or more</option>
+    <option value="40">40% off or more</option>
+    <option value="50">50% off or more</option>
+  </select>
+  <select id="verdictFilter" aria-label="Filter by verdict">
+    <option value="">Any verdict</option>
+    <option value="real">Real deals only</option>
+    <option value="strong">Strong or better</option>
+    <option value="routine">Routine sales</option>
+    <option value="check-list">Check-the-list only</option>
+  </select>
+  <select id="sortOrder" aria-label="Sort deals">
+    <option value="discount">Biggest discount first</option>
+    <option value="saved">Most dollars saved first</option>
+    <option value="price-low">Lowest price first</option>
+    <option value="price-high">Highest price first</option>
+    <option value="name">Name A–Z</option>
+  </select>
+  <button id="resetBtn" type="button">Reset</button>
+</section>
+
+<p class="result-line" id="resultLine" aria-live="polite"></p>
+<main class="grid" id="dealGrid"></main>
+<p class="empty" id="emptyMsg" hidden>No deals match those filters. Try clearing the search or lowering the discount.</p>
+
+<section class="compare" id="compareBox">
+  <h2>Same product, different stores?</h2>
+  <p>Two deals in this list appear at more than one store. Sony WH-1000XM5 headphones are <strong>$169.99 at Best Buy</strong> and $198 at Amazon — Best Buy wins by $28. AirPods Pro 3 are $149 at Amazon and $180 at Best Buy — Amazon wins. Always check the second store before you buy.</p>
+</section>
+
+<footer>
+  <p>Every deal on this page was found and checked by the site's maker on Black Friday, 27 Nov 2026, from deals roundups that name the store and quote its sale and usual prices. Each card links to the exact product on the store's own search, and names its source. Prices can change or sell out — confirm the price at checkout before you order.</p>
+  <p>Friday Finder is an independent deal guide. It is not affiliated with Amazon, Best Buy, Walmart, Target, Samsung, Google or Sam's Club, and it copies no store's branding.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
